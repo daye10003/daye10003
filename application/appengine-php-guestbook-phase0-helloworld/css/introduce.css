@@ -1,0 +1,15 @@
+body {
+	padding-top:10px;
+}
+
+[class$="fullname"]{
+	width: auto;
+	height: 100px;
+	padding-top: 50px;
+}
+.squirrel{
+	width: 400px;
+	height: auto;
+	position: absolute;
+	left: 50%;
+}

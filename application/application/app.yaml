@@ -1,0 +1,46 @@
+application: daye10003
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /
+  static_files: introduce.html
+  upload: introduce.html
+  mime_type: text/html
+
+- url: /idea.html
+  static_files: idea.html
+  upload: idea.html
+  mime_type: text/html
+
+- url: /idea1.html
+  static_files: idea1.html
+  upload: idea1.html
+  mime_type: text/html
+
+- url: /idea2.html
+  static_files: idea2.html
+  upload: idea2.html
+  mime_type: text/html
+
+- url: /idea3.html
+  static_files: idea3.html
+  upload: idea3.html
+  mime_type: text/html
+
+- url: /static/resource
+  static_dir: static/resource 
+  mime_type: image/png
+
+- url: /static/jpg
+  static_dir: static/jpg 
+  mime_type: image/jpg
+
+- url: /static/css/
+  static_dir: static/css
+  mime_type: text/css
+
+- url: /static/js
+  static_dir: static/js
+  mime_type: text/javascript

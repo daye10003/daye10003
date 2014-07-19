@@ -1,0 +1,18 @@
+body{
+	margin-left: 3%;
+	margin-top: 5%;
+	margin-right: 2%;
+}
+[class^=ant]{
+	width: 90px;
+	height: 60px;
+}
+.super_ant{
+	width: 90px;
+	height: 60px;
+}
+.div_ant{
+	width: 90px;
+	height: 60px;
+	float: left;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>다예</title>
+	<link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Oswald'>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static'
+	,filename='css/bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static'
+	,filename='css/introduce.css')}}">
+	<script type="text/javascript" src="{{url_for('static'
+		,filename='js/jquery-1.11.1.min.js')}}"></script>	
+	<script type='text/javascript' src="{{url_for('static'
+		,filename='js/jquery.easing.1.2.js')}}"></script>
+	<script type='text/javascript' src="{{url_for('static'
+		,filename='js/jquery.circulate.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static'
+		,filename='js/bootstrap.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static'
+		,filename='js/introduce.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static'
+		,filename='js/jquery-ui.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static'
+		,filename='js/jquery.booklet.latest.min.js')}}"></script>
+	<link href="{{url_for('static'
+	,filename='css/jquery.booklet.latest.css')}}" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+	<style type="text/css">
+	body { font:normal 12px/1.2 arial, verdana, sans-serif;}
+	</style>
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&appId=599808246807349&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="container">
+		<div class="table">
+			<div class="row">
+				<div class="col-xs-offset-4 col-xs-1">
+					<img class="D name img-responsive" alt="D" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpa1/t1.0-9/10468638_1449578371979189_1166339566394311784_n.jpg"/>
+				</div>
+				<div class="col-xs-1">
+					<img class="A name img-responsive" alt="A" src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/10477912_1449578311979195_703033989852645050_n.jpg"/>
+				</div>
+				<div class="col-xs-1">
+					<img class="Y name img-responsive" alt="Y" src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpa1/t1.0-9/10505452_1449578345312525_3848264423230372077_n.jpg"/>
+				</div>
+				<div class="col-xs-1">
+					<img class="E name img-responsive" alt="E" src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/10441281_1449578368645856_1237603590909147342_n.jpg"/>
+				</div>
+			</div>
+		</div>
+		<div id="contents">
+			<div class="content-D">
+				<div>
+					<img class="Dfullname" alt="Dream" src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/10478432_1449578358645857_5072973599714477692_n.jpg"/>
+				</div>
+				<div class="solar-system">
+					<div class="fixed-planet">
+						<img src="{{url_for('static',filename='resource/archicircle.png')}}" alt="archi" class="img-circle"/>
+						<a href="{{url_for('hello1')}}">
+							<img src="{{url_for('static',filename='resource/programming.png')}}" alt="programming" class="img-circle"/>
+						</a>
+					</div>
+					<div class="rotating-planet">
+						<img id="rotating_moon" src="{{url_for('static',filename='resource/design.png')}}" alt="design"/>
+					</div>
+				</div>
+			</div>
+			<div class="content-A">
+				<img class="Afullname" alt="Archi" src="https://scontent-a-ord.xx.fbcdn.net/hphotos-xaf1/t1.0-9/10524355_1449578331979193_6540131722189364819_n.jpg"/>
+			<!-- 	<br><br><br>
+				<h4>architectural studio 1-1 'Thing and Being'</h4>
+				<br>
+				<div class="mybook">
+					<div title="first page">
+						<h6><img src="./static/resource/1page.jpg" class="thing_page" alt="thing"/></h6>
+					</div>
+					<div title="second page">
+						<h6><img src="./static/resource/2page.jpg" class="thing_page" alt="thing"/></h6>
+					</div>
+					<div title="third page">
+						<h6><img src="./static/resource/3page.jpg" class="thing_page" alt="thing"/></h6>
+					</div>
+					<div title="fourth page">
+						<h6><img src="./static/resource/4page.jpg" class="thing_page" alt="thing"/></h6>
+					</div>
+					<div title="fifth page">
+						<h6><img src="./static/resource/5page.jpg" class="thing_page" alt="thing"/></h6>
+					</div>
+					<div title="sixth page">
+						<h6><img src="./static/resource/6page.jpg" class="thing_page" alt="thing"/></h6>
+					</div>
+					<div title="seventh page">
+						<h6><img src="./static/resource/7page.jpg" class="thing_page" alt="thing"/></h6>
+					</div>
+					<div title="eighth page">
+						<h6><img src="./static/resource/8page.jpg" class="thing_page" alt="thing"/></h6>
+					</div>
+				</div> -->
+				<br>
+				<h4>architectural studio 1-1 'Cubic'</h4>
+				<br>
+				<div class="mybook">
+					<div title="first page">
+						<h6><br><img src="{{url_for('static',filename='jpg/1page.jpg')}}" class="cubic_page" alt="cubic"/></h6>
+					</div>
+					<div title="second page">
+						<h6><br><img src="{{url_for('static',filename='jpg/2page.jpg')}}" class="cubic_page" alt="cubic"/></h6>
+					</div>
+					<div title="third page">
+						<h6><br><img src="{{url_for('static',filename='jpg/3page.jpg')}}" class="cubic_page" alt="cubic"/></h6>
+					</div>
+					<div title="fourth page">
+						<h6><br><img src="{{url_for('static',filename='jpg/4page.jpg')}}" class="cubic_page" alt="cubic"/></h6>
+					</div>
+					<div title="fifth page">
+						<h6><br><img src="{{url_for('static',filename='jpg/5page.jpg')}}" class="cubic_page" alt="cubic"/></h6>
+					</div>
+					<div title="sixth page">
+						<h6><br><img src="{{url_for('static',filename='jpg/6page.jpg')}}" class="cubic_page" alt="cubic"/></h6>
+					</div>
+					<div title="seventh page">
+						<h6><br><img src="{{url_for('static',filename='jpg/7page.jpg')}}" class="cubic_page" alt="cubic"/></h6>
+					</div>
+					<div title="eighth page">
+						<h6><br><img src="{{url_for('static',filename='jpg/8page.jpg')}}" class="cubic_page" alt="cubic"/></h6>
+					</div>
+				</div>
+			</section>
+			<footer></footer>
+			<script>
+			$(function () {
+				console.log('mybook');
+				$(".mybook").booklet();
+			});
+			</script>
+		</div>
+		<div class="content-Y">
+			<img class="Yfullname" alt="Yeah!" src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xfp1/t1.0-9/p235x165/10489757_1449604951976531_8697873278147175505_n.jpg"/>
+			<br>
+			<img class="squirrel" src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/10475470_1449617031975323_2566816805698489256_n.jpg"/>
+		</div>
+		<div class="content-E">
+			<img class="Efullname" alt="Encourage" src="https://scontent-b-ord.xx.fbcdn.net/hphotos-xpa1/t1.0-9/10457162_1449593968644296_5467078769662941069_n.jpg"/>
+			<br>
+			<div class="fb-like" data-href="https://daye10003.com" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+		</div>
+	</div>
+</div>	
+	</body>

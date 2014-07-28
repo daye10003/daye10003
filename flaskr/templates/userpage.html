@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+	<dl>
+	{% for i in accounts %}
+		<div>
+			<dt>Email:</dt>
+			<dd>{{ i['email'] }}</dd>
+			<dt>Password:</dt>
+			<dd>{{ i['password'] }}</dd>
+			<dt>admin</dt>	
+			<dd>{{ i['admin'] }}</dd>
+		</div>
+	{% else %}
+		<dd>Empty Accounts</dd>
+	{% endfor %}
+	</dl>
+{% endblock %}

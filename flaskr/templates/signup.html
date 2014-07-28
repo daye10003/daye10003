@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+	<h2>Signup</h2>
+	{% if message %}<p class='error'><strong>Message:</strong> {{ message }}{% endif %}
+	<form action="{{ url_for('signup') }}" method='post'>
+		<dl>
+			<dt>Email:</dt>
+			<dd><input type='text' name='email' id = 'email'>
+			<dd style = "display : none; color : red" id = "email_validator">invalid email</dd>
+			<dd style = "display : none; color : red" id = "email_check">existing email</dd>
+			<dt>Password:</dt>
+			<dd><input type='password' name='password' id = 'password'>
+			<dd style = "display : none; color : red" id = "password_validator">invalid password</dd>
+			<dd><input type='password' name='password_check' id = 'password_check'>
+			<dd style = "display : none; color : red" id = "password_check_validator">password does not match</dd>
+			<dt>admin</dt>	
+			<dd><input type='checkbox' value="admin" name='admin'></dd>
+			<dd><input type='submit' value='Sign up'>
+		</dl>
+	</form>
+{% endblock %}

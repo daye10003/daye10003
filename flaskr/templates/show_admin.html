@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block body %}
+	{% if session.logged_in %}
+		<a href="{{url_for('userpage')}}">user page</a>
+	{% endif %}
+{% endblock %}

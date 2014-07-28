@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<title>Flaskr</title>
+<link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style.css')}}">
+<script type="text/javascript" src="{{ url_for('static', filename = 'jquery-1.11.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'check.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'ajax.js') }}"></script>
+<div class='page'>
+	<h1>Flaskr</h1>
+	<div class='metanav'>
+		{% if not session.logged_in %}
+		<a href="{{url_for('login')}}">log in</a>
+		<a href="{{url_for('signup')}}">sign up</a>
+		{% elif session.logged_in and session.admin %}
+		<p> Welcome, {{ session.email }} </p>
+		<a href="{{url_for('userpage')}}">user page</a>
+		<a href="{{url_for('logout')}}">log out</a>
+		{% elif session.logged_in %}
+		<p> Welcome, {{ session.email }} </p>
+		<a href="{{url_for('logout')}}">log out</a>
+		{% endif %}
+	</div>
+	{% for message in get_flashed_messages() %}
+	<div class='flash'>{{ message }}</div>
+	{% endfor %}
+	{% block body %}{% endblock %}
+</div>
+
